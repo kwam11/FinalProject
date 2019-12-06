@@ -5,7 +5,7 @@ meanslope <- tapply(penguindata$slope, penguindata$group, mean)
 sdevslope <- tapply(penguindata$slope, penguindata$group, sd)
 n <- tapply(penguindata$slope, penguindata$group, length)
 data.frame(mean = meanslope, std.dev = sdevslope, n = n)
-write.csv(penguindata, file = ".../data/penguindata.csv")
+write.csv(penguindata, file = "data/penguindata.csv")
 
 #Create &Save Strip Chart
 pdf(file = "results/plot.pdf")
@@ -23,4 +23,5 @@ dev.off()
 #Run One-Way ANOVA & Save Results
 penguinAnova <- lm(slope ~ group, data = penguindata)
 anova(penguinAnova)
+out <- capture.output(anova(penguinAnova))
 cat("Results", out, file="results/summary.txt", sep="\n", append=FALSE)
