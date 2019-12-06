@@ -1,0 +1,7 @@
+Results
+Analysis of Variance Table
+
+Response: slope
+          Df   Sum Sq   Mean Sq F value Pr(>F)
+group      2 0.004022 0.0020111  0.7767 0.4727
+Residuals 21 0.054378 0.0025894               

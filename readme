@@ -1,0 +1,15 @@
+READ ME!
+
+Welcome to my repository for my analysis of macaroni penguin metabolic proxies. 
+
+To simulate the full  analysis, go into the "src" folder and run the "source.R" script. Make sure the repository is your present working directory when doing so.
+
+To view figures or test analysis output, go to the "results folder"
+
+To view raw data of the study, go to the "data" folder
+
+If for some reason data and/or figures are not present in the folders, run the "script.R" file with the repository as your pwd and they will automatically be generated and saved to those locations
+
+
+
+--Thank you!
